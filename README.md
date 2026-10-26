@@ -78,8 +78,6 @@ También se definieron las siguientes asignaciones:
 
 Como parte de la preparación de la identidad de prueba, se completó el atributo `mail` de Amador para que coincidiera con la dirección utilizada en el Toolkit.
 
-**Evidencia:** `screenshots/03-user-attributes-claims.png`
-
 ### Fase 4. Configuración del proveedor de identidad
 
 Se configuraron en el Toolkit los datos de Microsoft Entra ID necesarios para establecer la confianza con el proveedor de identidad:
