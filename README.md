@@ -48,7 +48,8 @@ El objetivo es configurar la confianza entre ambas partes, definir los atributos
 
 Se utilizó la aplicación empresarial **Microsoft Entra SAML Toolkit** en Microsoft Entra ID y se asignó la identidad de prueba de Amador Rivas (`arivas`).
 
-**Evidencia:** `screenshots/01-enterprise-app-overview.png`
+
+![SAML](01_SAML.png)
 
 ### Fase 2. Configuración básica de SAML
 
@@ -60,7 +61,7 @@ Se configuraron los endpoints y el identificador de la aplicación según los va
 
 Estos parámetros permiten identificar al proveedor de servicios, establecer el destino de la respuesta SAML y definir el punto de inicio del proceso de autenticación.
 
-**Evidencia:** `screenshots/02-saml-basic-configuration.png`
+![SAML_Conf](02_SAMLConf.png)
 
 ### Fase 3. Configuración de NameID y atributos
 
@@ -90,7 +91,7 @@ Se configuraron en el Toolkit los datos de Microsoft Entra ID necesarios para es
 
 Los valores se guardaron en la configuración de la conexión utilizada para el laboratorio.
 
-**Evidencia:** `screenshots/04-toolkit-idp-configuration.png`
+![ToolKitArivas](04_SAMLarivas.png)
 
 ### Fase 5. Prueba de autenticación SSO
 
@@ -102,7 +103,7 @@ Mediante SAML-tracer se identificó el envío de la respuesta al endpoint ACS:
 
 La respuesta SAML inspeccionada incluía el destino ACS configurado y un código de estado `Success`.
 
-**Evidencia:** `screenshots/05-saml-response-success.png`
+![SAML](07_SAMLTracer.png)
 
 ### Fase 6. Validación de la sesión autenticada
 
@@ -110,7 +111,7 @@ Tras completar el inicio de sesión con Microsoft, el Toolkit mostró `Hello ari
 
 Esta comprobación, junto con la traza del envío al ACS, aporta evidencia funcional del flujo SSO configurado.
 
-**Evidencia:** `screenshots/06-authenticated-toolkit-session.png`
+![SAML](06_ToolkitArivas.png)
 
 ## 4. Resultados
 
