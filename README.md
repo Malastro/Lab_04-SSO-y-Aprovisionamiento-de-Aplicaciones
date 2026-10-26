@@ -89,7 +89,6 @@ Se configuraron en el Toolkit los datos de Microsoft Entra ID necesarios para es
 
 Los valores se guardaron en la configuración de la conexión utilizada para el laboratorio.
 
-![ToolKitArivas](04_SAMLarivas.png)
 
 ### Fase 5. Prueba de autenticación SSO
 
@@ -97,7 +96,7 @@ Se inició una prueba real con la identidad de Amador Rivas. Microsoft Entra ID 
 
 Mediante SAML-tracer se identificó el envío de la respuesta al endpoint ACS:
 
-`POST https://samltoolkit.azurewebsites.net/SAML/Consume/22786`
+`POST https://samltoolkit.azurewebsites.net/SAML/Consume/22786` (línea de color azul)
 
 La respuesta SAML inspeccionada incluía el destino ACS configurado y un código de estado `Success`.
 
