@@ -1,6 +1,10 @@
 # Lab_04-SSO-y-Aprovisionamiento-de-Aplicaciones
 
 ### 1. Descripción del proyecto
-En Mariscos Recio S.L., los empleados utilizaban contraseñas independientes apuntadas en pósits para entrar en las aplicaciones externas de gestión de pedidos y logística. Antonio Recio exige centralizar el acceso: si un empleado ya tiene cuenta corporativa en el dominio, debe entrar a cualquier aplicación de la empresa con esa única identidad, y si se le despide (Leaver), su acceso a la aplicación externa debe cortarse automáticamente sin tener que entrar a borrarlo a mano.
+La comunidad de Mirador de Montepinar ha contratado un portal interno para consultar documentación de la comunidad, incidencias y actas de las juntas. Antonio Recio exige que todos los vecinos autorizados puedan entrar con sus cuentas corporativas de Microsoft, sin tener que mantener otra contraseña para cada aplicación.
 
-Aquí entran en juego los dos pilares de la integración de aplicaciones en IAM: SSO (Federación) y SCIM (Aprovisionamiento).
+Enrique Pastor, encargado de poner orden en la comunidad, propone integrar el portal con Microsoft Entra ID mediante SAML 2.0.
+
+El problema: si la identidad no se valida correctamente, un usuario podría no entrar cuando debe o, peor aún, acceder a una aplicación que no le corresponde.
+
+La misión de Enrique será configurar el inicio de sesión único, comprobar que funciona y diagnosticar errores. Antonio, por supuesto, quiere que todo esté listo antes de la próxima junta.
