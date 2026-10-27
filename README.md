@@ -211,7 +211,7 @@ Se definieron los identificadores de entidad y los endpoints de comunicación re
 
 Estos parámetros garantizan que Entra ID emita aserciones dirigidas exclusivamente a este servicio (*Audience Restriction*) y entregue el token en el receptor exacto de la instancia configurada.
 
-![SAML_Conf](02_SAMLConf.png)
+![SAML_Conf](02_SAMLConfi.png)
 
 ### Fase 3. Configuración de NameID y mapeo de atributos (Claims)
 Se estableció el identificador principal (`NameID`) en formato de dirección de correo electrónico mapeado al atributo `user.userprincipalname`. Adicionalmente, se configuró el envío de los siguientes atributos en la aserción:
